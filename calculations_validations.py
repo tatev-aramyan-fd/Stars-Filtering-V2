@@ -39,11 +39,14 @@ def is_valid_number(num: int):
 
 
 def is_valid_points(x: float, y: float):
+    # try:
     if 0 <= x <= 360 \
             and -90 <= y <= 90:
         return True
-    return False
 
+    return False
+    # except ValueError:
+    #     raise ValueError("Convert Error")
 
 def is_valid_fov(h: float, v: float):
     if 0 <= h <= 360 \
