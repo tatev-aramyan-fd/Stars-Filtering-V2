@@ -12,7 +12,7 @@ def get_inputs() -> tuple:
     print("h is in range [0, 360]\nv is in range [-90,90]")
     fov_h = float(input("Enter the Horizontal fov_h: "))
     fov_v = float(input("Enter the Vertical fov_v: "))
-    if not is_valid_points(fov_h, fov_v):
+    if not is_valid_fov(fov_h, fov_v):
         raise ValueError("FOV is not valid. ")
 
     number_of_stars = int(input("Enter number of stars: "))

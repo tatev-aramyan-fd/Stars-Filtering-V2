@@ -43,3 +43,10 @@ def is_valid_points(x: float, y: float):
             and -90 <= y <= 90:
         return True
     return False
+
+
+def is_valid_fov(h: float, v: float):
+    if 0 <= h <= 360 \
+            and 0 <= v <= 180:
+        return True
+    return False
